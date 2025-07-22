@@ -1,0 +1,280 @@
+body {
+    margin: 0;
+    background-color: #000;
+    color: white;
+    font-family: Arial, sans-serif;
+  }
+  .navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 30px;
+    background-color: #141414;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000; /* upar dikhane ke liye */
+  }
+  .title{
+    font-family: "Special Gothic Expanded One", sans-serif;
+    font-size: 25px;
+  }
+  .left-nav a {
+    margin-right: 20px;
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    display: inline-block;
+    padding: 10px 10px;
+    border-radius: 5px;
+  }
+   select{
+    border: none;
+    background-color: #141414;
+    color: white;
+    font-family: "Special Gothic Expanded One", sans-serif;
+    width: 60px;
+   }
+  .right-nav {
+    display: flex;
+    align-items: center;
+  }
+  .right-nav select,
+  .right-nav .profile-icon,
+  .right-nav button {
+    margin-left: 15px;
+  }
+  .right-nav button {
+    background-color: #3a3aff;
+    color: white;
+    border: none;
+    padding: 6px 12px;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  #search{
+    color: white;
+  }
+  #i2 {
+    height: 50px;
+  }
+  .left-nav a{
+    margin-left: 5px; 
+  }
+  #line{
+    color: gray;
+  }
+  #i1{
+    filter: brightness(0) invert(1);
+    height: 20px;
+  }
+  .profile-dropdown {
+    position: relative;
+    display: inline-block;
+    cursor: pointer;
+    margin-left: 30px;
+    border: none;
+  }
+  .profile-dropdown img {
+     height: 50px;
+  }
+  .dropdown-menu h1{
+     font-size: 15px;
+     text-align: center;
+  }
+  .dropdown-menu {
+     display: none;
+     position: absolute;
+     right: 0;
+     top: 60px;
+     border: 1px solid #444;
+     border-radius: 5px;
+     padding: 10px;
+    min-width: 150px;
+    z-index: 1001;
+   }
+  .dropdown-menu a {
+    display: block;
+    color: white;
+    padding: 8px;
+    text-decoration: none;
+    font-size: 14px;
+   }
+  .dropdown-menu a:hover {
+    background-color: #333;
+   }
+  .profile-dropdown:hover .dropdown-menu {
+    display: block;
+  }
+  button a{
+     text-decoration: none;
+     color: white;
+  }
+  .button:hover{
+     background-color: white;
+     color: #000;
+    
+  }
+  #i1:hover{
+      filter: brightness(0) invert(0);
+  }
+  #i3{
+  filter: brightness(0) invert(1);
+  height: 20px;
+  margin-left: 25px;
+}
+.container{
+  display: flex;
+}
+.d1{
+  width: 50%;
+  margin-top: 95px;
+  margin-left: 20px;
+}
+.p1{
+  font-weight: bolder;
+  font-size: 40px;
+}
+.p2{
+  margin-left: -45px;
+  font-size: 20px;
+}
+.btn-2{
+  height: 50px;
+  font-weight: bolder;
+  width: 180px;
+  font-size: 15px;
+  border-radius: 10px;
+}
+.btn-2 a{
+  text-decoration: none;
+  color: black;
+}
+.d2{
+  width: 50%;
+  margin-top: 95px;  
+}
+.s1{
+  display: flex;
+  height: 200px;
+  gap: 50px;
+}
+#i5{
+   border-radius: 10px;
+}
+#i6{
+  border-radius: 10px;
+}
+#i7{
+  border-radius: 10px;
+}
+#i8{
+  border-radius: 10px;
+}
+#i9{
+  border-radius: 10px;
+}
+#i10{
+  border-radius: 10px;
+}
+.s2{
+  display: flex;
+  height: 200px;
+  gap: 50px;
+  margin-top: 15px;
+}
+.container-2{
+  margin-top: 300px;
+  display: flex;
+}
+.s3{
+  margin-left: 30px;
+}
+.pre1{
+  font-weight: bolder;
+  font-size: 40px;
+  margin-top: -240px;
+  margin-left: -91px;
+}
+#h2{
+  font-size: 20px;
+}
+.btn-3{
+  height: 50px;
+  font-weight: bolder;
+  width: 100px;
+  font-size: 15px;
+  border-radius: 10px;
+}
+.btn-3 a{
+  text-decoration: none;
+  color: black;
+}
+#images{
+  margin-top: -235px;
+  height: 370px;
+  width: 700px;
+}
+.pre3{
+  font-weight: bolder;
+  font-size: 50px;
+  margin-left: -135px;
+}
+.pre4{
+  font-size: 20px;
+  margin-left: -40px;
+  margin-top: -70px;
+}
+.s6{
+  margin-top:-350px ;
+  margin-left: 680px;
+}
+.line1{
+  display: flex;
+}
+.line-1{
+  height: 130px;
+}
+.line2{
+  display: flex;
+}
+.line-2{
+  height: 130px;
+}
+.line3{
+  display: flex;
+}
+.line-3{
+  height: 130px;
+}
+footer{
+  background-color: rgb(28, 26, 26);
+  bottom: 0%;
+  text-align: center;
+  height: 150px;
+  text-align: center;
+}
+.links a{
+  text-decoration: none;
+  justify-content: center;
+  text-align: center;
+  position: relative;
+  color: rgb(56, 56, 212);
+}
+.links {
+  display: flex;
+  justify-content: center; /* This centers the links horizontally */
+  gap: 20px; /* Space between links */
+  margin-top: 10px;
+}
+h1 {
+  text-align: center;
+}
+.foot{
+  text-align: center;
+  bottom: 0%;
+  font-size: 14px;
+    color: #555;
+    margin-top: 10px;   
+}

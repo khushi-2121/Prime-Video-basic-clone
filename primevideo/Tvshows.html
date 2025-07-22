@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Prime Video Clone</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100..900&family=Special+Gothic+Expanded+One&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap" rel="stylesheet">
+  <style>
+    body {
+      margin: 0;
+      background-color: #000;
+      color: white;
+      font-family: Arial, sans-serif;
+    }
+    .navbar {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 10px 30px;
+      background-color: #141414;
+      position: fixed;
+      top: 0;
+      left: 0;
+      right: 0;
+      z-index: 1000; /* upar dikhane ke liye */
+    }
+    .title{
+      font-family: "Special Gothic Expanded One", sans-serif;
+      font-size: 25px;
+    }
+    .left-nav a {
+      margin-right: 20px;
+      text-decoration: none;
+      color: white;
+      font-weight: bold;
+      display: inline-block;
+    }
+     select{
+      border: none;
+      background-color: #141414;
+      color: white;
+      font-family: "Special Gothic Expanded One", sans-serif;
+      width: 60px;
+     }
+    .right-nav {
+      display: flex;
+      align-items: center;
+    }
+    .right-nav select,
+    .right-nav .profile-icon,
+    .right-nav button {
+      margin-left: 15px;
+    }
+    .right-nav button {
+      background-color: #3a3aff;
+      color: white;
+      border: none;
+      padding: 6px 12px;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+    #search{
+      color: white;
+    }
+    #i2 {
+      height: 50px;
+    }
+    .left-nav a{
+      margin-left: 5px; 
+    }
+    #line{
+      color: gray;
+    }
+    #i1{
+      filter: brightness(0) invert(1);
+      height: 20px;
+    }
+    .profile-dropdown {
+      position: relative;
+      display: inline-block;
+      cursor: pointer;
+      margin-left: 30px;
+      border: none;
+    }
+    .profile-dropdown img {
+       height: 50px;
+    }
+    .dropdown-menu h1{
+       font-size: 15px;
+       text-align: center;
+    }
+    .dropdown-menu {
+       display: none;
+       position: absolute;
+       right: 0;
+       top: 60px;
+       border: 1px solid #444;
+       border-radius: 5px;
+       padding: 10px;
+      min-width: 150px;
+      z-index: 1001;
+     }
+    .dropdown-menu a {
+      display: block;
+      color: white;
+      padding: 8px;
+      text-decoration: none;
+      font-size: 14px;
+     }
+    .dropdown-menu a:hover {
+      background-color: #333;
+     }
+    .profile-dropdown:hover .dropdown-menu {
+      display: block;
+    }
+    button a{
+       text-decoration: none;
+       color: white;
+    }
+    .button:hover{
+       background-color: white;
+       color: #000;
+    }
+    #i1:hover{
+        filter: brightness(0) invert(0);
+    }
+    #i3{
+    filter: brightness(0) invert(1);
+    height: 20px;
+    margin-left: 25px;
+  }
+  </style>
+</head>
+<body>
+
+  <div class="navbar">
+    <div class="left-nav">
+        <span class="title">prime video</span> 
+      <a href="#" class="button">Home</a>
+      <a href="Movies.html" class="button">Movies</a>
+      <a href="Tvshows.html" class="button">TV Shows</a>
+      <a href="Livetv.html" class="button">Live TV</a>
+      <span id="line">|</span>
+      <a href="#" id="a1" class="button">
+       <img id="i1" src="https://cdn-icons-png.freepik.com/256/9542/9542576.png?ga=GA1.1.335311890.1741507499&semt=ais_hybrid"> 
+       Subscriptions</a>
+      
+    </div>
+    <div class="right-nav">
+        <i id="i5"  class="fa-solid fa-magnifying-glass"></i>
+      <select>
+        <option value="">Eng</option>
+        <option value="">Hindi</option>
+        <option value="">Gujrati</option>
+        <option value="">Bahasa Indonesia</option>
+        <option value="">Italiano</option>
+        <option value="">Suomi</option>
+        <option value="">Svenska</option>
+        <option value="">Norsk</option>
+        <option value="">Polski</option>
+        <option value="">Francais</option>
+        <option value="">Dansk</option>
+        <option value="">Magyar</option>
+        <option value="">Deutsch</option>
+        <option value="">Espanol</option>
+        <option value="">Espanol</option>
+        <option value="">Nedelands</option>
+        <option value="">Turkce</option>
+        <option value="">Marathi</option>
+        <option value="">Bahasa Melayu</option>
+        <option value="">Wikang Filipino</option>
+      </select>
+      <a href="ninedots.html"><img id="i3" src="https://cdn-icons-png.freepik.com/256/983/983385.png?ga=GA1.1.335311890.1741507499&semt=ais_hybrid"></a>
+
+        <div class="profile-dropdown">
+          <img id="i2" src="https://cdn-icons-png.flaticon.com/128/9131/9131529.png">
+          <div class="dropdown-menu">
+          <h1>YOUR ACCOUNT</h1>
+            <a href="#">Sign In</a>
+            <a href="#">Help</a>
+            <a href="#">Watch Anywhere</a>
+          </div>
+        </div>
+      <button><a href="joinprime.html">Join Prime</a></button>
+    </div>
+  </div>
+
+</body>
+</html>
